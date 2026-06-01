@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Resmi Saya</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background-color: #000000; /* Latar belakang hitam polos */
+            color: #ffffff; /* Tulisan putih biar terbaca */
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #ffffff;
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 1px solid #333333;
+        }
+
+        nav {
+            background-color: #111111;
+            padding: 0.8rem;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #3498db;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            padding: 2rem;
+            border-radius: 8px;
+            border: 1px solid #333333;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: 1.5rem;
+            border-bottom: 2px solid #555555;
+            padding-bottom: 0.3rem;
+        }
+
+        .sosmed-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .btn {
+            display: block;
+            width: 250px;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s;
+            border: none;
+        }
+
+        /* Warna tombol sesuai sosmed */
+        .btn.ig { background-color: #E4405F; }
+        .btn.tiktok { background-color: #ffffff; color: #000000; }
+        .btn.wa { background-color: #25D366; }
+
+        .btn:hover {
+            opacity: 0.8;
+        }
+
+        .keterangan {
+            margin-top: 1.5rem;
+            font-style: italic;
+            color: #bbbbbb;
+        }
+
+        footer {
+            background-color: #111111;
+            color: #888888;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            border-top: 1px solid #333333;
+        }
+
+        @media (max-width: 600px) {
+            nav ul { gap: 1rem; }
+            .card { padding: 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1> Halaman Resmi Saya </h1>
+        <p>Yang asli cuma ini, tinggal di bawah aja ya </p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#sosmed">Media Sosial</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="card" id="sosmed">
+            <h2> Ikuti & Hubungi Saya</h2>
+            <div class="sosmed-list">
+                <a href="https://www.instagram.com/1ns0mnia_jpg?igsh=eWYzOGptcW9wdXo5" class="btn ig" target="_blank"> Instagram: 1ns0mnia_jpg</a>
+                <a href="https://www.tiktok.com/@zzaaa_420?_r=1&_t=ZS-96qVoHHlqFU" class="btn tiktok" target="_blank"> TikTok: zzaaa_420</a>
+                <a href="https://wa.me/qr/6MZP5LDZR2CDI1" class="btn wa" target="_blank"> WhatsApp: Chat Disini</a>
+            </div>
+            <p class="keterangan">*Hati-hati akun palsu, yang asli cuma tautan di atas ya!</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2026 - Website Resmi Saya</p>
+    </footer>
+
+</body>
+</html>
